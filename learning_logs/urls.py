@@ -7,6 +7,9 @@ from . import views
 urlpatterns = [
   # 主页
   path('', views.index, name='index'),
+
+  # 注册成功后定向到主页
+  path('users/register/learning_ logs/index/', views.index, name='index'),
   
   # 显示所有的主题
   path('topics/', views.topics, name='topics'),

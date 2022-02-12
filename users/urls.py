@@ -14,9 +14,13 @@ urlpatterns = [
   # path('logout/', views.logout_view, name='logout'),
   path('logout', LogoutView.as_view(template_name='users/logged_out.html'), name='logout'),
 
-
   # 注册页面
   path('register/', views.register, name='register'),
+
+  # 更改密码
+  # path('change_password/')
+
+
 
 ]
 
